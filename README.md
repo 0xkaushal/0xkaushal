@@ -45,4 +45,4 @@ An open-source conformance auditor for MCP servers — a Python CLI that pairs a
 
 ---
 
-📫 Find me on [email](satvikkaushal8@gmail.com) · always up for a conversation about AI agents, MCP, or turning ugly real-world data into something usable.
+📫 Find me on [email](mailto:satvikkaushal8@gmail.com) · always up for a conversation about AI agents, MCP, or turning ugly real-world data into something usable.

@@ -16,7 +16,7 @@ A self-hosted AI memory layer that captures context from Claude Code, GitHub Cop
 - **Stack:** FastAPI · Supabase · AWS Lambda · S3 / CloudFront
 - **Why it exists:** AI coding tools each keep their own siloed history. memward unifies that into a portable, self-hosted memory you control.
 
-### ⚡ [Odin — a terminal AI assistant](https://github.com/0xkaushal/Odin)
+### ⚡ [Odin - a terminal AI assistant](https://github.com/0xkaushal/Odin)
 A conversational CLI agent with an agentic tool-use loop, persistent cross-session memory, live web search, and system tools — built incrementally, one tested feature at a time.
 
 - **What it taught me:** wiring an agentic reason → act → observe loop, injecting durable memory into context, and the unglamorous reality of getting integrations working behind a corporate proxy (TLS, non-standard auth, flaky upstreams).

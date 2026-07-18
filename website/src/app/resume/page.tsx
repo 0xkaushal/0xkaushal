@@ -26,20 +26,20 @@ export default function ResumePage() {
       </div>
 
       {/* Company Timeline */}
-      <div className="mb-10 overflow-x-auto">
-        <div className="flex min-w-max items-start">
-          {experience.map((exp, i) => (
+      <div className="mb-10">
+        <div className="flex flex-col items-start">
+          {[...experience].reverse().map((exp, i) => (
             <div key={exp.company} className="flex items-start">
-              <div className="flex flex-col items-center px-4">
-                <div className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--accent)" }} />
-                <div className="mt-2 text-center">
-                  <p className="text-sm font-semibold text-foreground">{exp.company}</p>
-                  <p className="mt-0.5 text-xs text-muted">{exp.period}</p>
-                </div>
+              <div className="flex flex-col items-center mr-4">
+                <div className="h-3 w-3 rounded-full shrink-0" style={{ backgroundColor: "var(--accent)" }} />
+                {i < experience.length - 1 && (
+                  <div className="w-px flex-1 min-h-8" style={{ backgroundColor: "var(--border-color)" }} />
+                )}
               </div>
-              {i < experience.length - 1 && (
-                <div className="mt-1.5 h-px w-20 shrink-0" style={{ backgroundColor: "var(--border-color)" }} />
-              )}
+              <div className="pb-6">
+                <p className="text-sm font-semibold text-foreground">{exp.company}</p>
+                <p className="mt-0.5 text-xs text-muted">{exp.period}</p>
+              </div>
             </div>
           ))}
         </div>

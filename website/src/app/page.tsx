@@ -88,8 +88,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blog */}
-      <section id="blog" className="min-h-screen scroll-mt-16 border-t border-border py-16">
+      {/* Blog — hidden for now, uncomment when ready */}
+      {/* <section id="blog" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Blog</h2>
         <p className="mb-6 text-muted">
           Thoughts on AI agents, MCP, integrations, and the unglamorous problems in between.
@@ -113,7 +113,7 @@ export default function Home() {
             ))}
           </div>
         )}
-      </section>
+      </section> */}
 
       {/* Resume */}
       <section id="resume" className="min-h-screen scroll-mt-16 border-t border-border py-16">

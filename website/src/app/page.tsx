@@ -120,7 +120,7 @@ export default function Home() {
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-2xl font-bold tracking-tight">Resume</h2>
           <a
-            href="/Satvik_kaushal.pdf"
+            href="/Satvik_Kaushal.pdf"
             download
             className="flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium transition-colors hover:border-accent/50 hover:text-accent"
           >

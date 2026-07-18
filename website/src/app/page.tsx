@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-4xl px-6">
       {/* Hero */}
-      <section id="home" className="py-16 md:py-24">
+      <section id="home" className="flex min-h-[calc(100vh-65px)] flex-col justify-center py-16">
         <h1 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">
           Hi, I&apos;m Satvik{" "}
           <span className="inline-block">👋</span>
@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="scroll-mt-20 border-t border-border py-16">
+      <section id="about" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-6 text-2xl font-bold tracking-tight">About me</h2>
         <div className="space-y-4 text-muted leading-relaxed">
           <p>
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="scroll-mt-20 border-t border-border py-16">
+      <section id="projects" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Projects</h2>
         <p className="mb-6 text-muted">
           Things I&apos;m building — mostly around AI agents, memory, and developer tools.
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Blog */}
-      <section id="blog" className="scroll-mt-20 border-t border-border py-16">
+      <section id="blog" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Blog</h2>
         <p className="mb-6 text-muted">
           Thoughts on AI agents, MCP, integrations, and the unglamorous problems in between.
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Resume */}
-      <section id="resume" className="scroll-mt-20 border-t border-border py-16">
+      <section id="resume" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-2xl font-bold tracking-tight">Resume</h2>
           <a
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="scroll-mt-20 border-t border-border py-16">
+      <section id="contact" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Contact</h2>
         <p className="mb-6 text-muted">
           Always up for a conversation about AI agents, MCP, or turning ugly real-world data into something usable.

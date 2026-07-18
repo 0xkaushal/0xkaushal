@@ -13,10 +13,24 @@ export interface Skill {
 
 export const experience: Experience[] = [
   {
+    title: "Junior Associate Consultant",
+    company: "Rythmos",
+    location: "Bengaluru, India",
+    period: "May 2019 – Dec 2020",
+    highlights: [],
+  },
+  {
+    title: "Technology Analyst → Technology Consultant",
+    company: "Deloitte",
+    location: "Bengaluru, India",
+    period: "Dec 2020 – Aug 2022",
+    highlights: [],
+  },
+  {
     title: "Principal Software Engineer",
     company: "Eli Lilly and Company",
     location: "Bengaluru, India",
-    period: "Present",
+    period: "Aug 2022 – Present",
     highlights: [
       "Building integration-heavy tooling that lives close to the domain",
       "Working on AI agents, MCP tooling, and self-hosted AI memory infrastructure",

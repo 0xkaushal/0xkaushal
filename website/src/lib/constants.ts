@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Satvik Kaushal",
   handle: "0xkaushal",
-  title: "Satvik Kaushal — Principal Software Engineer",
+  title: "Satvik Kaushal",
   description:
     "Principal Software Engineer at Eli Lilly. Building AI agents, MCP tooling, and self-hosted AI memory. Python, TypeScript, Go, AWS.",
   url: "https://satvikkaushal.me",

@@ -1,0 +1,47 @@
+---
+title: "Building a Self-Hosted AI Memory Layer"
+description: "Why your AI tools keep forgetting what you told them, and how I built memward to fix it."
+date: "2024-12-15"
+tags: ["AI", "memory", "infrastructure"]
+---
+
+# The Problem
+
+Every AI coding tool keeps its own siloed history. Claude Code knows what you told it in one session, Copilot keeps its own context, and Claude Desktop starts fresh every conversation. You repeat yourself constantly.
+
+## Why This Happens
+
+The architecture is simple: each tool maintains its own context window. When that window fills up or the session ends, the context is gone. There's no shared substrate — no place where "things Satvik has told his tools" actually lives.
+
+## What I Built
+
+**memward** is a self-hosted AI memory layer. It captures context from Claude Code, GitHub Copilot, and Claude Desktop into one place you actually own.
+
+```python
+# Memory gets captured automatically from tool interactions
+memory = await memward.capture(
+    source="claude-code",
+    context=session_context,
+    metadata={"project": "odin", "topic": "auth-flow"}
+)
+```
+
+The key design decisions:
+
+1. **Self-hosted** — your memory, your infrastructure
+2. **Multi-source** — works across Claude Code, Copilot, Claude Desktop
+3. **Structured** — not just raw text, but tagged and searchable
+4. **Portable** — export everything, no lock-in
+
+## The Stack
+
+- **FastAPI** for the API layer
+- **Supabase** for structured storage + vector search
+- **AWS Lambda** for serverless capture endpoints
+- **S3 + CloudFront** for any large context artifacts
+
+## What I Learned
+
+The hardest part wasn't the AI or the memory retrieval — it was the plumbing. Getting each tool to emit its context in a capturable way, handling auth across three different systems, and making it fast enough that you don't notice the overhead.
+
+That's always where the real work is: not the interesting algorithm, but the integration.

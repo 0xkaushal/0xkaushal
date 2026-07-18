@@ -16,7 +16,7 @@ export default function ResumePage() {
           <p className="text-muted">Professional experience & skills</p>
         </div>
         <a
-          href="/resume.pdf"
+          href="/Satvik_kaushal.pdf"
           download
           className="flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium transition-colors hover:border-accent/50 hover:text-accent"
         >

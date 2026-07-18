@@ -14,10 +14,10 @@ export const siteConfig = {
 } as const;
 
 export const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/blog", label: "Blog" },
-  { href: "/resume", label: "Resume" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#blog", label: "Blog" },
+  { href: "/#resume", label: "Resume" },
+  { href: "/#contact", label: "Contact" },
 ] as const;

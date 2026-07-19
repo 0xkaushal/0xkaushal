@@ -134,49 +134,40 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Company Timeline */}
-        <div className="mb-10">
-          <div className="flex flex-col items-start">
-            {[...experience].reverse().map((exp, i) => (
-              <div key={exp.company} className="flex items-start">
-                {/* Line + dot column */}
-                <div className="flex flex-col items-center mr-4">
-                  <div className="h-3 w-3 rounded-full shrink-0" style={{ backgroundColor: "var(--accent)" }} />
-                  {i < experience.length - 1 && (
-                    <div className="w-px flex-1 min-h-8" style={{ backgroundColor: "var(--border-color)" }} />
-                  )}
-                </div>
-                {/* Label */}
-                <div className="pb-6">
-                  <p className="text-sm font-semibold text-foreground">{exp.company}</p>
-                  <p className="mt-0.5 text-xs text-muted">{exp.period}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Experience */}
-        <div className="space-y-4">
-          {experience.map((exp) => (
-            <div key={`${exp.company}-${exp.title}`} className="rounded-lg border border-border bg-surface p-6">
-              <div className="mb-3 flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-                <div>
-                  <h3 className="font-semibold text-foreground">{exp.title}</h3>
-                  <p className="text-sm text-accent">{exp.company}</p>
-                </div>
-                <div className="text-sm text-muted">
-                  <p>{exp.location} · {exp.period}</p>
-                </div>
+        <div className="flex flex-col">
+          {[...experience].reverse().map((exp, i, arr) => (
+            <div key={`${exp.company}-${exp.title}`} className="flex gap-5">
+              {/* Timeline column */}
+              <div className="flex flex-col items-center">
+                <div className="h-3 w-3 rounded-full shrink-0 mt-1.5" style={{ backgroundColor: "var(--accent)" }} />
+                {i < arr.length - 1 && (
+                  <div className="w-px grow" style={{ backgroundColor: "var(--border-color)" }} />
+                )}
               </div>
-              <ul className="space-y-2">
-                {exp.highlights.map((h, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-muted">
-                    <span className="mt-1 text-accent">→</span>
-                    {h}
-                  </li>
-                ))}
-              </ul>
+              {/* Card */}
+              <div className="rounded-lg border border-border bg-surface p-6 mb-6 flex-1">
+                <div className="mb-3 flex flex-col justify-between gap-1 sm:flex-row sm:items-start">
+                  <div>
+                    <h3 className="font-semibold text-foreground">{exp.title}</h3>
+                    <p className="text-sm text-accent">{exp.company}</p>
+                  </div>
+                  <div className="text-sm text-muted sm:text-right shrink-0">
+                    <p>{exp.location}</p>
+                    <p>{exp.period}</p>
+                  </div>
+                </div>
+                {exp.highlights.length > 0 && (
+                  <ul className="space-y-2">
+                    {exp.highlights.map((h, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-muted">
+                        <span className="mt-1 text-accent shrink-0">→</span>
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
           ))}
         </div>

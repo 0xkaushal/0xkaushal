@@ -11,6 +11,15 @@ const lines = [
   { prompt: false, text: "→ Python · TypeScript · Go · AWS" },
   { prompt: false, text: "" },
   { prompt: false, text: '→ Philosophy: "Ship first, make it clean, keep it running"' },
+  { prompt: false, text: "" },
+  { prompt: true, text: "satvik.funFacts()" },
+  { prompt: false, text: "" },
+  { prompt: false, text: "→ Has opinions about YAML. Strong ones." },
+  { prompt: false, text: "→ Debugged for 3 hours. Typo. Classic." },
+  { prompt: false, text: "→ Still uses print() to debug. No regrets." },
+  { prompt: false, text: "→ Coffee status: critically low" },
+  { prompt: false, text: "" },
+  { prompt: false, text: "// open to collabs, not open to meetings at 9am" },
 ];
 
 export function TerminalHero() {

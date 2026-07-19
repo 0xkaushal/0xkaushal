@@ -20,7 +20,7 @@ export default function Home() {
           <span className="inline-block">👋</span>
         </h1>
         <p className="mb-8 text-lg text-muted">
-          I build integration-heavy tooling that lives close to a real domain.
+          Principal Software Engineer specializing in AI agents, MCP tooling, and the integration work that turns a promising demo into a production system.
         </p>
         <TerminalHero />
       </section>
@@ -30,15 +30,20 @@ export default function Home() {
         <h2 className="mb-6 text-2xl font-bold tracking-tight">About me</h2>
         <div className="space-y-4 text-muted leading-relaxed">
           <p>
-            I&apos;m a <strong className="text-foreground">Principal Software Engineer at Eli Lilly</strong>{" "}
-            based in Bengaluru. I build software that has to survive messy inputs,
-            systems that weren&apos;t designed to talk to each other, and constraints
-            you only discover once you&apos;re inside the environment.
+            I&apos;m a <strong className="text-foreground">Principal Software Engineer at Eli Lilly Research Laboratories</strong>{" "}
+            in Bengaluru. My work sits at the intersection of AI and enterprise infrastructure — shipping production MCP servers,
+            RAG pipelines, and agentic systems inside a regulated pharma environment where the gap between a working demo
+            and a real deployment is filled with OAuth flows, GxP constraints, and broken integrations.
           </p>
           <p>
-            Lately I&apos;m focused on{" "}
-            <strong className="text-foreground">personal AI infrastructure</strong>:
-            memory, agents, and the plumbing that makes AI tools actually usable day to day.
+            I&apos;ve led teams, managed end-to-end delivery, and personally debugged the things that don&apos;t show up in tutorials:
+            cross-account AWS Private Link failures, Zscaler-intercepted traffic, AADSTS token errors, and Kubernetes rollouts
+            that die in staging but not locally. I care about systems that stay up, pipelines that recover, and AI capabilities
+            that reach users — not just proof-of-concepts.
+          </p>
+          <p>
+            Outside of Lilly, I build personal AI infrastructure — memory layers, CLI agents, and MCP tooling — mostly to solve
+            problems I hit day-to-day and to stay close to how these tools actually behave under real conditions.
           </p>
         </div>
 

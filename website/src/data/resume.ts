@@ -56,12 +56,13 @@ export const experience: Experience[] = [
 export const skills: Skill[] = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript / JavaScript", "Go"],
+    items: ["Python", "TypeScript / JavaScript", "Go", "JavaScript"],
   },
   {
     category: "Cloud & Infrastructure",
     items: [
-      "AWS (Lambda, ECS/Fargate, DynamoDB, S3, CloudFormation)",
+      "AWS",
+      "Azure",
       "OAuth 2.0",
       "CI/CD (GitHub Actions)",
     ],
@@ -71,6 +72,7 @@ export const skills: Skill[] = [
     items: [
       "AI Agents & Tool-use Loops",
       "Model Context Protocol (MCP) Tooling",
+      "LLM Frameworks (LangChain, FastMCP, LangFuse, RAGAS)",
       "Self-hosted AI Memory",
       "Data Pipelines",
       "Integration Architecture",

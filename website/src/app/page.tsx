@@ -20,8 +20,7 @@ export default function Home() {
           <span className="inline-block">👋</span>
         </h1>
         <p className="mb-8 text-lg text-muted">
-          I build integration-heavy tooling that lives close to a real domain.{" "}
-          <span className="text-sm opacity-60">(Translation: I make computers talk to other computers that really don&apos;t want to.)</span>
+          I build integration-heavy tooling that lives close to a real domain.
         </p>
         <TerminalHero />
       </section>
@@ -34,14 +33,12 @@ export default function Home() {
             I&apos;m a <strong className="text-foreground">Principal Software Engineer at Eli Lilly</strong>{" "}
             based in Bengaluru. I build software that has to survive messy inputs,
             systems that weren&apos;t designed to talk to each other, and constraints
-            you only discover once you&apos;re inside the environment.{" "}
-            <span className="text-sm opacity-60">(Spoiler: there are always more constraints.)</span>
+            you only discover once you&apos;re inside the environment.
           </p>
           <p>
             Lately I&apos;m focused on{" "}
             <strong className="text-foreground">personal AI infrastructure</strong>:
-            memory, agents, and the plumbing that makes AI tools actually usable day to day.{" "}
-            <span className="text-sm opacity-60">Yes, I talk to LLMs for a living. No, they don&apos;t talk back nicely.</span>
+            memory, agents, and the plumbing that makes AI tools actually usable day to day.
           </p>
         </div>
 
@@ -49,15 +46,15 @@ export default function Home() {
         <ul className="mt-6 space-y-3">
           <li className="flex items-start gap-3 text-muted">
             <span className="mt-0.5 text-accent">→</span>
-            <span><strong className="text-foreground">Integration over greenfield.</strong> Gluing real systems together under constraints. <span className="text-xs opacity-60">(It&apos;s basically duct tape, but make it enterprise.)</span></span>
+            <span><strong className="text-foreground">Integration over greenfield.</strong> Gluing real systems together under constraints.</span>
           </li>
           <li className="flex items-start gap-3 text-muted">
             <span className="mt-0.5 text-accent">→</span>
-            <span><strong className="text-foreground">Proximity to the domain.</strong> Understanding the user&apos;s actual problem. <span className="text-xs opacity-60">(Hint: it&apos;s never what the ticket says.)</span></span>
+            <span><strong className="text-foreground">Proximity to the domain.</strong> Understanding the user&apos;s actual problem.</span>
           </li>
           <li className="flex items-start gap-3 text-muted">
             <span className="mt-0.5 text-accent">→</span>
-            <span><strong className="text-foreground">Shipping.</strong> A working thing in someone&apos;s hands beats a perfect thing in a branch. <span className="text-xs opacity-60">(Filed under: painful lessons.)</span></span>
+            <span><strong className="text-foreground">Shipping.</strong> A working thing in someone&apos;s hands beats a perfect thing in a branch.</span>
           </li>
         </ul>
 
@@ -82,8 +79,7 @@ export default function Home() {
       <section id="projects" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Projects</h2>
         <p className="mb-6 text-muted">
-          Things I&apos;m building — mostly around AI agents, memory, and developer tools.{" "}
-          <span className="text-sm opacity-60">(Each one started as &quot;this should be simple&quot;.)</span>
+          Things I&apos;m building — mostly around AI agents, memory, and developer tools.
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
           {projects.map((project) => (
@@ -199,8 +195,7 @@ export default function Home() {
       <section id="contact" className="min-h-screen scroll-mt-16 border-t border-border py-16">
         <h2 className="mb-2 text-2xl font-bold tracking-tight">Contact</h2>
         <p className="mb-6 text-muted">
-          Always up for a conversation about AI agents, MCP, or turning ugly real-world data into something usable.{" "}
-          <span className="text-sm opacity-60">(Or just vibing about why YAML is a war crime.)</span>
+          Always up for a conversation about AI agents, MCP, or turning ugly real-world data into something usable.
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2">

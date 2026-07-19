@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero */}
       <section id="home" className="flex min-h-[calc(100vh-65px)] flex-col justify-center py-16">
         <h1 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">
-          Hi, I&apos;m Satvik{" "}
+          Hey, I&apos;m Satvik{" "}
           <span className="inline-block">👋</span>
         </h1>
         <p className="mb-8 text-lg text-muted">

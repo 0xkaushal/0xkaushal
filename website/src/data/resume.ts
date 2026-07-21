@@ -55,8 +55,17 @@ export const experience: Experience[] = [
 
 export const skills: Skill[] = [
   {
-    category: "Languages",
-    items: ["Python", "TypeScript / JavaScript", "Go", "JavaScript"],
+    category: "Languages & Frameworks",
+    items: [
+      "Python",
+      "TypeScript / JavaScript",
+      "Go",
+      "FastAPI",
+      "React / Next.js",
+      "Node.js",
+      "LangChain",
+      "FastMCP",
+    ],
   },
   {
     category: "Cloud & Infrastructure",

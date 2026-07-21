@@ -66,8 +66,8 @@ export default function Home() {
         {/* Tech */}
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           <div className="rounded-lg border border-border bg-surface p-4">
-            <h3 className="mb-2 font-mono text-xs font-semibold text-accent uppercase">Languages</h3>
-            <p className="text-sm text-muted">Python · TypeScript · Go</p>
+            <h3 className="mb-2 font-mono text-xs font-semibold text-accent uppercase">Languages & Frameworks</h3>
+            <p className="text-sm text-muted">Python · TypeScript · Go · FastAPI · React · Next.js · LangChain</p>
           </div>
           <div className="rounded-lg border border-border bg-surface p-4">
             <h3 className="mb-2 font-mono text-xs font-semibold text-accent uppercase">Cloud</h3>

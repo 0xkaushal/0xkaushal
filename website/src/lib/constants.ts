@@ -1,10 +1,12 @@
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://satvikkaushal.me";
+
 export const siteConfig = {
   name: "Satvik Kaushal",
   handle: "0xkaushal",
   title: "Satvik Kaushal",
   description:
     "Principal Software Engineer at Eli Lilly. Building AI agents, MCP tooling, and self-hosted AI memory. Python, TypeScript, Go, AWS.",
-  url: "https://satvikkaushal.me",
+  url: siteUrl,
   email: "satvikkaushal8@gmail.com",
   github: "https://github.com/0xkaushal",
   links: {

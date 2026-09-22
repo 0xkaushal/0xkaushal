@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { experience, skills } from "@/data/resume";
+import { withBasePath } from "@/lib/base-path";
 import { Download } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function ResumePage() {
           <p className="text-muted">Professional experience & skills</p>
         </div>
         <a
-          href="/Satvik_Kaushal.pdf"
+          href={withBasePath("/Satvik_Kaushal.pdf")}
           download
           className="flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium transition-colors hover:border-accent/50 hover:text-accent"
         >

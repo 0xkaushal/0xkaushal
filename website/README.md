@@ -20,6 +20,28 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## GitHub Pages deployment
+
+This app is configured to deploy to GitHub Pages as a static export.
+
+1. In the repository settings, open `Pages`.
+2. Set `Source` to `GitHub Actions`.
+3. Push to `main` or run the `Deploy GitHub Pages` workflow manually.
+
+Local commands:
+
+```bash
+npm run build
+```
+
+The static site is generated under `out/`.
+
+If you want production metadata locally, build with:
+
+```bash
+NEXT_PUBLIC_SITE_URL="https://0xkaushal.github.io/0xkaushal" NEXT_PUBLIC_BASE_PATH="/0xkaushal" npm run build
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

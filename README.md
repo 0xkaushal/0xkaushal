@@ -2,7 +2,7 @@
 
 I build integration-heavy tooling that lives close to a real domain — software that has to survive messy inputs, systems that weren't designed to talk to each other, and constraints you only discover once you're inside the environment.
 
-Lately I'm focused on **personal AI infrastructure**: memory, agents, and the plumbing that makes AI tools actually usable day to day. I like the unglamorous problems — parsing output that breaks on a stray comma, getting an integration through a corporate proxy, adding auth to something that shipped without it. Ship first, make it clean, keep it running.
+Lately I'm focused on personal AI infrastructure: memory, agents, and the plumbing that makes AI tools actually usable day to day. I like the unglamorous problems — parsing output that breaks on a stray comma, getting an integration through a corporate proxy, adding auth to something that shipped without it. Ship first, make it clean, keep it running.
 
 Software Engineer focused on AI infrastructure, agent systems, and enterprise integrations. Comfortable across Python, TypeScript, and Go, deep on AWS, and spending most of my energy in the MCP and agent-tooling space.
 

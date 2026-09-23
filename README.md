@@ -4,7 +4,7 @@ I build integration-heavy tooling that lives close to a real domain — software
 
 Lately I'm focused on **personal AI infrastructure**: memory, agents, and the plumbing that makes AI tools actually usable day to day. I like the unglamorous problems — parsing output that breaks on a stray comma, getting an integration through a corporate proxy, adding auth to something that shipped without it. Ship first, make it clean, keep it running.
 
-Principal Software Engineer at Eli Lilly (Bengaluru). Comfortable across Python, TypeScript, and Go, deep on AWS, and spending most of my energy in the MCP and agent-tooling space.
+Software Engineer focused on AI infrastructure, agent systems, and enterprise integrations. Comfortable across Python, TypeScript, and Go, deep on AWS, and spending most of my energy in the MCP and agent-tooling space.
 
 ---
 
